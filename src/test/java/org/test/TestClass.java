@@ -25,6 +25,7 @@ public class TestClass {
 		WebElement cl = driver.findElement(By.xpath("//input[@value='Go']"));
 		cl.click();
 
+		//getting all elements in list
 		List<WebElement> phones = driver
 				.findElements(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']"));
 		
@@ -33,7 +34,7 @@ public class TestClass {
 
 		for (WebElement x : phones) {
 			System.out.println(x.getText());
-			x.click();
+			//x.click();
 		}
 		driver.quit();
 
